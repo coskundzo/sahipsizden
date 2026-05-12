@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarAI - Akıllı Araç Analizi</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <!-- 🔝 APPBAR -->
+    <div class="appbar">
+        <div class="left">
+            <div class="logo">🚗 CarAI</div>
+            <div id="breadcrumb">Araç seçimi yapın</div>
+        </div>
+
+        <div class="right">
+            <button class="icon-btn" title="Favoriler">⭐</button>
+            <button class="icon-btn" title="Bildirimler">🔔</button>
+            <button class="icon-btn" title="Profil">👤</button>
+            <button class="compare-btn" title="Araçları karşılaştır">
+                <span>Karşılaştır</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <!-- SOL PANEL -->
+        <div class="sidebar">
+            <h3>🎯 Filtrele</h3>
+            <label for="category">Kategori</label>
+            <select id="category">
+                <option value="">Kategori seçin</option>
+            </select>
+            
+            <label for="brand">Marka</label>
+            <select id="brand" disabled>
+                <option value="">Önce kategori seçin</option>
+            </select>
+            
+            <label for="series">Model</label>
+            <select id="series" disabled>
+                <option value="">Önce marka seçin</option>
+            </select>
+            
+            <label for="engine">Motor Tipi</label>
+            <select id="engine" disabled>
+                <option value="">Önce model seçin</option>
+            </select>
+            
+            <label for="package">Paket</label>
+            <select id="package" disabled>
+                <option value="">Önce motor seçin</option>
+            </select>
+            
+            <label for="year">Yıl</label>
+            <select id="year" disabled>
+                <option value="">Önce paket seçin</option>
+            </select>
+            
+            <button id="analyzeBtn" onclick="analyze()" disabled>
+                <span id="btnText">🔍 Analiz Yap</span>
+            </button>
+        </div>
+
+        <!-- SAĞ PANEL -->
+        <div class="content">
+            <div class="car-header">
+                <div class="car-image-container">
+                    <img id="carImage" 
+                         src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&auto=format&fit=crop&q=80" 
+                         alt="Araç görseli">
+                </div>
+                <div class="car-title-section">
+                    <h2 id="carTitle">Araç Seçiniz</h2>
+                    <span class="car-badge" id="carBadge" style="display: none;">Hazır</span>
+                </div>
+            </div>
+
+            <div class="result-box">
+                <h3>Analiz Sonuçları</h3>
+                <div id="resultContainer">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🚗</div>
+                        <h4>Analiz için araç seçiniz</h4>
+                        <p>Sol menüden marka, model ve diğer özellikleri seçerek analiz yapabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>
