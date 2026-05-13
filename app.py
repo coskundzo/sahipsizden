@@ -44,8 +44,4 @@ def analyze_car():
 
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     app.run(debug=True, threaded=True)
-=======
-    app.run(debug=True, threaded=True)
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)

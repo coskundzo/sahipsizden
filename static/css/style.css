@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-=======
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,7 +5,6 @@ body {
     min-height: 100vh;
 }
 
-<<<<<<< HEAD
 .appbar {
     background: white;
     padding: 15px 30px;
@@ -25,27 +15,10 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-=======
-/* 🔝 APPBAR */
-.appbar {
-    height: 70px;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 }
 
 .appbar .left {
     display: flex;
-<<<<<<< HEAD
     align-items: center;
     gap: 20px;
 }
@@ -59,39 +32,15 @@ body {
 #breadcrumb {
     color: #666;
     font-size: 14px;
-=======
-    flex-direction: column;
-    gap: 4px;
-}
-
-.logo {
-    font-weight: 700;
-    font-size: 26px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-#breadcrumb {
-    font-size: 13px;
-    color: #6b7280;
-    font-weight: 500;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 }
 
 .appbar .right {
     display: flex;
-<<<<<<< HEAD
     gap: 10px;
-=======
-    gap: 12px;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
     align-items: center;
 }
 
 .icon-btn {
-<<<<<<< HEAD
     background: none;
     border: none;
     font-size: 20px;
@@ -141,141 +90,39 @@ body {
     margin-top: 0;
     color: #333;
     font-size: 20px;
-=======
-    background: #f3f4f6;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon-btn:hover {
-    background: #e5e7eb;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.compare-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-}
-
-.compare-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
-}
-
-/* Layout */
-.container {
-    display: flex;
-    min-height: calc(100vh - 70px);
-    gap: 30px;
-    padding: 40px;
-    max-width: 1800px;
-    margin: 0 auto;
-}
-
-/* Sidebar */
-.sidebar {
-    width: 380px;
-    min-width: 380px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 35px;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    height: fit-content;
-    position: sticky;
-    top: 90px;
-}
-
-.sidebar h3 {
-    color: #1f2937;
-    margin-bottom: 25px;
-    font-size: 24px;
-    font-weight: 700;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 }
 
 .sidebar label {
     display: block;
-<<<<<<< HEAD
     margin-top: 15px;
     margin-bottom: 5px;
     color: #555;
     font-weight: 500;
     font-size: 14px;
-=======
-    font-size: 14px;
-    font-weight: 600;
-    color: #4b5563;
-    margin-top: 18px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 }
 
 .sidebar select {
     width: 100%;
-<<<<<<< HEAD
     padding: 10px;
     border: 2px solid #e0e0e0;
     border-radius: 8px;
     font-size: 14px;
     transition: border 0.3s;
     background: white;
-=======
-    padding: 14px 18px;
-    border: 2px solid #e5e7eb;
-    border-radius: 12px;
-    font-size: 15px;
-    background: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    padding-right: 36px;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 }
 
 .sidebar select:focus {
     outline: none;
     border-color: #667eea;
-<<<<<<< HEAD
 }
 
 .sidebar select:disabled {
     background: #f5f5f5;
     cursor: not-allowed;
-=======
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-.sidebar select:hover {
-    border-color: #d1d5db;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 }
 
 .sidebar button {
     width: 100%;
-<<<<<<< HEAD
     padding: 12px;
     margin-top: 20px;
     background: #667eea;
@@ -296,37 +143,10 @@ body {
 
 .sidebar button:disabled {
     background: #ccc;
-=======
-    padding: 16px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 28px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-}
-
-.sidebar button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
-}
-
-.sidebar button:active {
-    transform: translateY(0);
-}
-
-.sidebar button:disabled {
-    opacity: 0.6;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
     cursor: not-allowed;
     transform: none;
 }
 
-<<<<<<< HEAD
 .content {
     flex: 1;
     background: white;
@@ -348,38 +168,12 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-=======
-/* Content */
-.content {
-    flex: 1;
-    padding: 0;
-    max-width: 100%;
-}
-
-.car-header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-}
-
-.car-image-container {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 25px;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 }
 
 .car-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-<<<<<<< HEAD
 }
 
 .car-title-section {
@@ -417,65 +211,11 @@ body {
     padding: 20px;
     border-radius: 10px;
     min-height: 200px;
-=======
-    transition: transform 0.3s ease;
-}
-
-.car-image-container:hover img {
-    transform: scale(1.05);
-}
-
-.car-title-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#carTitle {
-    color: #1f2937;
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0;
-}
-
-.car-badge {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.result-box {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    min-height: 400px;
-}
-
-.result-box h3 {
-    color: #1f2937;
-    margin-bottom: 25px;
-    font-size: 24px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.result-box h3::before {
-    content: '🔍';
-    font-size: 24px;
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 }
 
 #result {
     white-space: pre-wrap;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-<<<<<<< HEAD
     line-height: 1.8;
     color: #333;
 }
@@ -527,233 +267,3 @@ body {
     color: #666;
     font-size: 16px;
 }
-=======
-    line-height: 1.9;
-    color: #374151;
-    font-size: 16px;
-    background: #f9fafb;
-    padding: 25px;
-    border-radius: 12px;
-    border-left: 4px solid #667eea;
-}
-
-/* Loading Spinner */
-.loading {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
-    border-top-color: white;
-    animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
-
-.analyzing {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: #667eea;
-    font-weight: 600;
-}
-
-/* Empty State */
-.empty-state {
-    text-align: center;
-    padding: 60px 20px;
-    color: #9ca3af;
-}
-
-.empty-state-icon {
-    font-size: 80px;
-    margin-bottom: 20px;
-    opacity: 0.5;
-}
-
-.empty-state h4 {
-    font-size: 18px;
-    color: #6b7280;
-    margin-bottom: 10px;
-}
-
-.empty-state p {
-    font-size: 14px;
-    color: #9ca3af;
-}
-
-/* Responsive */
-
-/* Extra Large Screens - 1920px+ */
-@media (min-width: 1920px) {
-    .appbar {
-        padding: 0 60px;
-        height: 80px;
-    }
-    
-    .logo {
-        font-size: 28px;
-    }
-    
-    #breadcrumb {
-        font-size: 14px;
-    }
-    
-    .icon-btn {
-        width: 45px;
-        height: 45px;
-        font-size: 22px;
-    }
-    
-    .compare-btn {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
-    
-    .container {
-        max-width: 2200px;
-        gap: 50px;
-        padding: 60px;
-    }
-    
-    .sidebar {
-        width: 420px;
-        min-width: 420px;
-        padding: 40px;
-    }
-    
-    .sidebar h3 {
-        font-size: 26px;
-    }
-    
-    .sidebar select {
-        padding: 16px 20px;
-        font-size: 16px;
-    }
-    
-    .sidebar button {
-        padding: 18px;
-        font-size: 17px;
-    }
-    
-    .car-image-container {
-        height: 500px;
-    }
-    
-    #carTitle {
-        font-size: 36px;
-    }
-    
-    .result-box {
-        padding: 50px;
-        min-height: 500px;
-    }
-    
-    .result-box h3 {
-        font-size: 28px;
-    }
-    
-    #result {
-        font-size: 18px;
-        padding: 30px;
-    }
-}
-
-/* Large Screens - 1440px to 1919px */
-@media (min-width: 1440px) and (max-width: 1919px) {
-    .container {
-        max-width: 1900px;
-        gap: 40px;
-        padding: 50px;
-    }
-    
-    .sidebar {
-        width: 400px;
-        min-width: 400px;
-    }
-    
-    .car-image-container {
-        height: 450px;
-    }
-    
-    #carTitle {
-        font-size: 34px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .container {
-        flex-direction: column;
-        padding: 25px;
-        gap: 25px;
-    }
-    
-    .sidebar {
-        width: 100%;
-        min-width: auto;
-        position: static;
-    }
-    
-    .content {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 640px) {
-    .appbar {
-        padding: 0 15px;
-        height: 60px;
-    }
-    
-    .logo {
-        font-size: 20px;
-    }
-    
-    .compare-btn span {
-        display: none;
-    }
-    
-    .container {
-        padding: 15px;
-        gap: 15px;
-    }
-    
-    .sidebar {
-        padding: 20px;
-    }
-    
-    .sidebar h3 {
-        font-size: 18px;
-    }
-    
-    .car-header {
-        padding: 20px;
-    }
-    
-    #carTitle {
-        font-size: 20px;
-    }
-    
-    .car-image-container {
-        height: 200px;
-    }
-    
-    .result-box {
-        padding: 20px;
-        min-height: 250px;
-    }
-    
-    .result-box h3 {
-        font-size: 18px;
-    }
-    
-    #result {
-        font-size: 14px;
-        padding: 15px;
-    }
-}
-}
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)

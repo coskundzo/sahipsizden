@@ -267,13 +267,7 @@ async function analyze() {
     }
 }
 
-<<<<<<< HEAD
-// Ensure loadBrands runs after DOM is ready
-document.addEventListener("DOMContentLoaded", function() {
-    loadBrands();
-=======
 // Ensure loadCategories runs after DOM is ready
 document.addEventListener("DOMContentLoaded", function() {
     loadCategories();
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
 });

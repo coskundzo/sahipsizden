@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-<<<<<<< HEAD
 import time
 
 def fetch_data(url):
@@ -32,31 +31,3 @@ def fetch_data(url):
             
     except Exception as e:
         return f"Hata oluştu: {str(e)}"
-=======
-
-def fetch_data(url):
-    headers = {"User-Agent": "Mozilla/5.0"}
-
-    try:
-        res = requests.get(url, headers=headers, timeout=10)
-        res.raise_for_status()
-        soup = BeautifulSoup(res.text, "html.parser")
-
-        texts = []
-        for p in soup.find_all("p"):
-            t = p.get_text().strip()
-            if len(t) > 40:
-                texts.append(t)
-
-        return texts[:20]
-
-    except requests.exceptions.Timeout:
-        print(f"UYARI: {url} yanıt vermiyor (timeout)")
-        return []
-    except requests.exceptions.RequestException as e:
-        print(f"UYARI: {url} çekilemedi - {str(e)}")
-        return []
-    except Exception as e:
-        print(f"UYARI: Scraping hatası - {str(e)}")
-        return []
->>>>>>> c66183f (İlk yükleme: Tüm proje ve veritabanı dosyaları eklendi)
